@@ -17,7 +17,7 @@ def _Frequency(wordslist):
     trimmeddictlist.append(trimmedfreq)
     return trimmeddictlist
 
-def SentenceRank(url):
+def Summary(url):
     article=GetText(url)
     percent=(20/100)
     sentokens=GetSentenceTokens(article)
@@ -39,3 +39,6 @@ def SentenceRank(url):
     
     summary=str(' '.join(sorteddict))
     return summary
+
+
+                
