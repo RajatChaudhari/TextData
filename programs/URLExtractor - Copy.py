@@ -8,7 +8,8 @@ Created on Fri Aug 17 16:31:12 2018
 def GetData():
     import json
     import pyodbc
-    
+    #import numpy as np
+
     server = ''
     database = ''
     username = ''
@@ -32,5 +33,5 @@ def GetData():
         data=json.loads(prospect)
         for each in data:
             urllist.append(each['url'])
-    
+    #np.savetxt("urllist.csv", urllist, delimiter=",", fmt='%s')
     return urllist
