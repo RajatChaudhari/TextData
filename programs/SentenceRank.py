@@ -5,7 +5,7 @@ Created on Thu Aug 10 15:21:09 2018
 @author: rajat13440
 """
 from ProcessData import GetSentenceTokens, Normalize
-from TextExtractor import GetText
+#from TextExtractor import GetText
 
 def _Frequency(wordslist):
     trimmeddictlist=[]
@@ -17,8 +17,8 @@ def _Frequency(wordslist):
     trimmeddictlist.append(trimmedfreq)
     return trimmeddictlist
 
-def Summary(url):
-    article=GetText(url)
+def Summary(article):
+    #article=GetText(url)
     percent=(20/100)
     sentokens=GetSentenceTokens(article)
     tokens=Normalize(article)
